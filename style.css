@@ -128,14 +128,6 @@ body{
     transform-origin: bottom;
     animation: rotate 3600s infinite linear;/*1 hora*/
 }
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
 .seconds{
     height: 35%;
@@ -159,3 +151,12 @@ body{
     transform-origin: bottom;
     animation: rotate 43200s infinite linear;/*12 horas*/
 }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
