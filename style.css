@@ -126,9 +126,9 @@ body{
     top: 15%;
     left: 50%;
     transform-origin: bottom;
-    animation: rotate-minutes 3600s infinite linear;/*1 hora*/
+    animation: rotate 3600s infinite linear;/*1 hora*/
 }
-@keyframes rotate-minutes {
+@keyframes rotate {
     from {
       transform: rotate(0deg);
     }
@@ -145,16 +145,9 @@ body{
     top: 15%;
     left: 50%;
     transform-origin: bottom;
-    animation: rotate-seconds 60s infinite linear;/*1 minuto*/
+    animation: rotate 60s infinite linear;/*1 minuto*/
 }
-@keyframes rotate-seconds {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+
 
 .hours{
     height: 25%;
@@ -164,13 +157,5 @@ body{
     top: 25%;
     left: 50%;
     transform-origin: bottom;
-    animation: rotate-hours 43200s infinite linear;/*12 horas*/
+    animation: rotate 43200s infinite linear;/*12 horas*/
 }
-@keyframes rotate-hours {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
