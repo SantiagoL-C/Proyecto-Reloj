@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(250, 227, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-container{
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-inside{
+    height: 550px;
+    width: 550px;
+    background-color: rgb(250, 227, 255);
+    position: relative;
+    border-radius: inherit;
+
+}
+
+.time-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.time{
+    font-size: 40px;
+    line-height: 40px;
+    color: rgb(26, 85, 223);
+    font-weight: 10;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.time:nth-of-type(1){
+    top: 55px;
+    right: 20%;
+    left: 73%;
+}
+
+.time:nth-of-type(2){
+    top: 140px;
+    right: 7%;
+    left: auto;
+}
+
+.time:nth-of-type(3){
+    top: 45%;
+    right: 5px;
+    left: auto;
+}
+
+.time:nth-of-type(4){
+    bottom: 140px;   
+    top: auto;
+    right: 7%;
+    left: auto;
+}
+
+.time:nth-of-type(5){
+    bottom: 60px;
+    top: 83%;
+    right: 23%;
+    left: 73%;
+}
+
+.time:nth-of-type(6){
+    bottom: 10px;
+    top: auto;
+}
+
+.time:nth-of-type(7){
+    bottom: 58px;
+    top: auto;
+    right: auto;
+    left: 25%;
+}
+
+.time:nth-of-type(8){
+    bottom: 155px;
+    top: auto;
+    right: auto;
+    left: 10%;
+}
+
+.time:nth-of-type(9){
+    top: 45%;
+    right: auto;
+    left: 25px;
+}
+
+.time:nth-of-type(10){
+    top: 140px;
+    right: auto;
+    left: 13%;
+}
+
+.time:nth-of-type(11){
+    top: 58px;
+    right: auto;
+    left: 28%;
+}
+
+.minutes{
+    height: 35%;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform-origin: bottom;
+    animation: rotate-minutes 3600s infinite linear;/*1 hora*/
+}
+@keyframes rotate-minutes {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.seconds{
+    height: 35%;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform-origin: bottom;
+    animation: rotate-seconds 60s infinite linear;/*1 minuto*/
+}
+@keyframes rotate-seconds {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.hours{
+    height: 25%;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform-origin: bottom;
+    animation: rotate-hours 43200s infinite linear;/*12 horas*/
+}
+@keyframes rotate-hours {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
